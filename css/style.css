@@ -116,3 +116,28 @@ body {
   margin-top: 60px;
   margin-left: 280px;
 }
+.features {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  width: 100%;
+  min-height: 660px;
+  background-color: #131415;
+}
+.features h2 {
+  display: inline-block;
+  margin-left: 500px;
+  font-size: 50px;
+}
+.features-page {
+  display: flex;
+  justify-content: center;
+}
+.uniqueness,
+.premium,
+.chairs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
