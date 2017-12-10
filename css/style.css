@@ -3,7 +3,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+a {
+  display: inline-block;
+}
 .container {
   width: 1060px;
   margin: 0 auto;
@@ -122,7 +124,7 @@ body {
 }
 .features h2 {
   display: inline-block;
-  margin-left: 500px;
+  margin-left: 365px;
   margin-top: 65px;
   margin-bottom: 55px;
   font-size: 49px;
@@ -174,10 +176,12 @@ body {
 }
 .news {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .news h2 {
   display: inline-block;
-  margin-left: 400px;
+  margin-left: 275px;
   margin-top: 65px;
   margin-bottom: 55px;
   font-size: 49px;
@@ -185,11 +189,11 @@ body {
 .news-page {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px;
 }
 .reviews {
   font-family: 'Roboto', 'Arial', sans-serif;
   list-style: none;
+  margin-left: -50px;
 }
 .reviews li {
   margin-bottom: 30px;
@@ -233,7 +237,6 @@ body {
   white-space: pre;
 }
 .top-news {
-  margin-right: 70px;
   font-size: 18px;
 }
 .top-news p {
@@ -261,7 +264,6 @@ body {
 }
 .switch p {
   font-size: 14px;
-
 }
 .page-switch {
   display: flex;
@@ -269,11 +271,13 @@ body {
   width: 180px;
   list-style: none;
   position: relative;
+  margin-bottom: 60px;
 }
 .page-switch  a {
   text-decoration: none;
   color: #221f1f;
   font-weight: bold;
+  margin-top: -15px;
 }
 .page-switch  li:first-child a {
   padding: 7px 14px;
@@ -300,4 +304,64 @@ body {
   right: -20px;
   top: 5px;
   background-image: url("../img/vector2.png");
+}
+.footer-page {
+  width: 100%;
+  background: #131415;
+}
+.copyrighted {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyrighted-page {
+  width: 277px;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+.copyrighted-page a {
+  color: #ffffff;
+  font-weight: bold;
+}
+.author {
+  font-weight: bold;
+}
+.social b {
+  display: inline-block;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-left: 15px
+}
+.social-page {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin-left: -25px
+}
+.social-page li {
+  margin-right: 10px
+}
+.visually-hidden {
+  position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+.networks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  background: #d0d0d0;
+  border-radius: 50%;
+}
+.networks:hover {
+  background: #f89513;
 }
