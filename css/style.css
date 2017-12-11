@@ -3,9 +3,7 @@ body {
   margin: 0;
   padding: 0;
 }
-a {
-  display: inline-block;
-}
+
 .container {
   width: 1060px;
   margin: 0 auto;
@@ -23,18 +21,16 @@ a {
 .site-navigation {
   display: flex;
   justify-content: space-between;
-  min-width: 340px;
+  align-items: center;
+  min-width: 370px;
   list-style: none;
 }
+
 .site-navigation a {
+  position: relative;
   color: #ffffff;
   font-size: 18px;
   text-decoration: none;
-}
-.home,
-.reviews,
-.services {
-  position: relative;
 }
 .home::before {
   position: absolute;
@@ -46,14 +42,14 @@ a {
   top: 5px;
   background-image: url("../img/main_icon.png");
 }
-.reviews::before {
+.mention::before {
   position: absolute;
   content: "";
   display: table;
   width: 20px;
   height: 18px;
   left: -35px;
-  top: 5px;
+  top: 3px;
   background-image: url("../img/feed_icon.png");
 }
 .services::before {
@@ -63,7 +59,7 @@ a {
   width: 20px;
   height: 18px;
   left: -35px;
-  top: 5px;
+  top: 7px;
   background-image: url("../img/service_icon.png");
   background-repeat: no-repeat;
 }
