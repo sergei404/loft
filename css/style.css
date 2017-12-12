@@ -112,6 +112,7 @@ body {
   margin-left: 280px;
   margin-bottom: 60px;
 }
+
 .features  {
   width: 100%;
   min-height: 570px;
@@ -276,7 +277,8 @@ body {
   margin-top: -15px;
 }
 .page-switch  li:first-child a {
-  padding: 7px 14px;
+  width: 25px;
+  padding: 7px 12px;
   color: #d4d4d8;
   background: #27273e;
   border-radius: 5px;
@@ -360,4 +362,66 @@ body {
 }
 .networks:hover {
   background: #f89513;
+}
+
+.form {
+  background-color: #ffffff;
+}
+
+.form h2 {
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-bottom: 35px;
+  font-size: 45px;
+  font-weight: bold;
+}
+.form form {
+    width: 760px;
+    margin: 0 auto;
+}
+.equalizer {
+  display: flex;
+  justify-content: space-between;
+  width: 760px;
+}
+.half-width {
+    display: inline-block;
+    margin: 0;
+}
+.half-width input {
+     width: 320px;
+     margin-bottom: 30px;
+     padding: 10px 15px;
+     font-size: 16px;
+     border: 0;
+     outline: 2px solid #d7dcde;
+}
+.form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-page  textarea {
+  width: 96%;
+  padding: 10px 15px;
+  font-size: 17px;
+  margin-bottom: 30px;
+  border: 0;
+  outline: 2px solid #d7dcde;
+}
+.form-submit {
+  display: block;
+  width: 260px;
+  padding: 15px 0;
+  margin-bottom: 75px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background: #fb565a;
+  border-radius: 3px;
+  border: none;
 }
