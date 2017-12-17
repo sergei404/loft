@@ -13,32 +13,44 @@
   <div class="wrapper">
   <header class="main-header">
     <div class="container">
-      <nav class="main-navigation">
-        <a class="menu-logo" href="index.html">
-          <img src="img/afrodita.png" width="160" height="18" alt="логотип афродиты">
-       </a>
-        <ul class="site-navigation">
-          <li><a class="home" href="index.html">главная</a></li>
-          <li><a class="mention" href="#">отзывы</a></li>
-          <li><a class="services" href="services.html">услуги</a></li>
-        </ul>
-        <ul class="phone-sked">
-          <li><a class="phone" href="tel:88000039210">8(800)00-392-10</a></li>
-          <li><a href="#">График работы</a>
-            <ul class="sub-menu">
-              <li>пн-вс: 09:00-20:00</li>
-              <li>обед: 14:00-14:30</li>
-            </ul>
-          </li>
-        </ul>
+      <nav class="navigation">
+        <a class="navigation__logo" href="index.html">
+        <img src="img/afrodita.png" width="160" height="18" alt="логотип афродиты">
+     </a>
+     <ul class="site-navigation">
+       <li><a class="site-navigation__link" href="index.html">
+         <img class="site-navigation__link--icon" src="img/whete-main_icon.png" alt="зигзаг">
+         главная
+       </a></li>
+       <li><a class="site-navigation__link active" href="#">
+         <img class="site-navigation__link--icon" src="img/feed_icon.png" alt="звезда">
+         отзывы
+       </a></li>
+       <li><a class="site-navigation__link" href="services.html">
+         <img class="site-navigation__link--icon" src="img/whete-service_icon.png" alt="гантеля">
+         услуги
+       </a></li>
+     </ul>
+        <div class="contact__Information">
+          <div><a class="contact__Information--phone" href="tel:88000039210">8(800)00-392-10</a></div>
+          <div class="contact__Information--sked"><a class="contact__Information--link" href="#">График работы</a>
+            <div class="contact__Information--sub-menu">
+              <div class="sub-menu__sked">пн-вс: 09:00-20:00</div>
+              <div>обед: 14:00-14:30</div>
+            </div>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
 <main class="main-content">
-  <section class="news">
+  <section class="recall">
     <div class="container">
-
-    <h2>отзывы</h2>
+     <ul class="recall__navigation">
+       <li><a href="">Главная</a></li>
+       <li><a href="">Отзывы</a></li>
+     </ul>
+    <h2 class="recall__title">отзывы</h2>
     <div class="news-page">
       <ul class="reviews">
         <li>
@@ -103,16 +115,19 @@
           <li><a href="#">7</a></li>
         </ul>
       </div>
-
-     <aside class="service-more">
+    </div>
+     <section class="service-more">
+       <div class="container">
        <p>
          Помимо перечисленных услуг, мы предоставляем консультации профессиональных диетологов, тренеров, психологов. Также есть кабинет массажа, зал спа рядом с бассейном и возможность арендовать центр для проведения массовых мероприятий. <span class="service-more_tagline">Ждем ваших заявок!</span>
        </p>
-     </aside>
+       <div>
+     </section>
 
      <section class="form">
+       <div class="container">
         <h2>Оставить отзыв</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form action="https://" method="post">
           <div class="equalizer">
             <p class="half-width">
               <label for="name">Ваше имя</label>
@@ -139,29 +154,13 @@
           </div>
           <button class="form-submit">отправить</button>
         </form>
+
+        </div>
     </section>
 
-    </div>
+
     </main>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <footer class="footer-page">
     <div class="container">
