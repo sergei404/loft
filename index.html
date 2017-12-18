@@ -43,6 +43,8 @@
         </nav>
       </div>
     </header>
+
+
     <main class="main-content">
       <section class="banner">
         <div class="container">
@@ -51,6 +53,8 @@
           </div>
         </div>
       </section>
+
+
       <section class="features">
         <div class="container">
           <h2 class="features__title">особенности</h2>
@@ -94,10 +98,13 @@
           </ul>
         </div>
       </section>
+
+
       <section class="news">
         <div class="container">
           <h2 class="news__title">последние новости</h2>
           <div class="news-page">
+            <div class="news-page__parh">
             <ul class="reviews">
               <li>
                 <div class="reviews-border">
@@ -140,6 +147,19 @@
                 </div>
               </li>
             </ul>
+            <div class="switch">
+              <p>Страница 1 из 7</p>
+              <ul class="page-switch">
+                <li><a class="page-switch__first" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+              </ul>
+            </div>
+          </div>
             <aside class="top-news">
               <p>топ новостей <span class="hue">за сентябрь</span></p>
               <ul>
@@ -162,18 +182,6 @@
             </aside>
           </div>
       </section>
-      <div class="switch">
-        <p>Страница 1 из 7</p>
-        <ul class="page-switch">
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">6</a></li>
-          <li><a href="#">7</a></li>
-        </ul>
-      </div>
       </div>
     </main>
   </div>
@@ -181,7 +189,7 @@
     <div class="container">
       <section class="copyrighted">
         <div class="copyrighted-page">Сделано с любовью и старанием на курсе "HTML &plus; CSS" в
-          <a href="https://loftschool.com/course/web-beginner">Loftschool</a>. Автор работы:<span class="author">Бутенко Сергей</span>
+          <a class="copyrighted-page__link" href="https://loftschool.com/course/web-beginner">Loftschool</a>. Автор работы:<span class="author">Бутенко Сергей</span>
         </div>
         <div class="logo">
           <a class="menu-logo" href="#">
@@ -189,21 +197,21 @@
        </a>
         </div>
         <div class="social">
-          <b>Наши социальные сети</b>
+          <b class="social__tagline">Наши социальные сети</b>
           <ul class="social-page">
-            <li><a class="networks" href="#vk"><span class="visually-hidden">VK</span>
+            <li><a class="social__networks" href="#vk"><span class="visually-hidden">VK</span>
             <img src="img/vk.png" alt="в контакте">
           </a></li>
-            <li><a class="networks" href="#facebook"><span class="visually-hidden">Facebook</span>
+            <li><a class="social__networks" href="#facebook"><span class="visually-hidden">Facebook</span>
             <img src="img/fb.png" alt="фейсбук">
           </a></li>
-            <li><a class="networks" href="#google"><span class="visually-hidden">Google</span>
+            <li><a class="social__networks" href="#google"><span class="visually-hidden">Google</span>
             <img src="img/google.png" alt="гугл">
           </a></li>
-            <li><a class="networks" href="#twitter"><span class="visually-hidden">Twitter</span>
+            <li><a class="social__networks" href="#twitter"><span class="visually-hidden">Twitter</span>
             <img src="img/twitter.png" alt="твитер">
           </a></li>
-            <li><a class="networks" href="#mail"><span class="visually-hidden">Mail</span>
+            <li><a class="social__networks" href="#mail"><span class="visually-hidden">Mail</span>
             <img src="img/mail.png" alt="майл">
           </a></li>
           </ul>
