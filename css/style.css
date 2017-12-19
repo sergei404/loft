@@ -29,7 +29,8 @@ ul {
 
 .main-header {
   width: 100%;
-  min-height: 80px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #131415;
 }
 
@@ -37,7 +38,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
 }
 
 .site-navigation {
@@ -109,11 +109,14 @@ ul {
   line-height: 2;
   color: #f89513;
 }
+/*.main-content {
+  padding-left: 110px;
 
+}*/
 .banner {
   width: 100%;
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 20px;
 }
 
 .banner__img {
@@ -122,13 +125,24 @@ ul {
 
 .features {
   width: 100%;
-  margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 90px;
-  background: #131415;
+  min-width: 750px;
+  /*background: #131415;*/
+  margin-top: 40px;
   color: #ffffff;
+  background-image: url(rhombus.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
+/*svg {
+  width: 100%;
+  min-height: 750px;
+  border: 1px solid #131415;
+}
+.svg {
+  margin-top: -620px;
+}*/
 .features .features__title {
   display: block;
   text-align: center;
@@ -429,15 +443,16 @@ ul {
   padding-bottom: 55px;
 }
 
-.recall__navigation {
+.main-content__navigation {
+  margin-top: 45px;
   list-style: none;
 }
 
-.recall__navigation--line {
+.main-content__navigation--line {
   display: inline-block;
 }
 
-.recall__navigation--link {
+.main-content__navigation--link {
   position: relative;
   text-decoration: none;
   padding-left: 15px;
@@ -446,20 +461,20 @@ ul {
   color: #4e4c4c;
 }
 
-.recall__navigation--link::before {
+.main-content__navigation--link::before {
   position: absolute;
   content: "/";
   display: table;
   left: 3px;
 }
 
-.recall__navigation--link-home {
+.main-content__navigation--link-home {
   color: #f9aa42;
   border-bottom: 2px solid #fde4c4;
   padding-left: 0;
 }
 
-.recall__navigation--link-home::before {
+.main-content__navigation--link-home::before {
   display: none;
 }
 
@@ -682,4 +697,121 @@ ul {
 
 .intro__page--link:hover {
   background: #131415;
+}
+
+/*.features__svg {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 150px;
+}
+svg {
+  width: 100%;
+  min-height: 750px;
+  border: 1px solid #131415ж
+}
+.features__svg h2 {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.svg {
+  margin-top: -550px;
+}*/
+.service {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.service__title,
+.partners__title {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.service__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+.service__list-row {
+  width: 27%;
+  margin-bottom: 40px;
+  margin-right: 65px;
+}
+.service__list-row--indent {
+  margin-right: 0;
+}
+.service__list-row--title {
+  position: relative;
+  text-align: center;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #48dd8f;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: brightness(50%);
+}
+/*.service__list-row--text::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}*/
+.service__list-row--fitness {
+  background-image: url("../img/sports.jpg");
+  margin-left: 0;
+}
+.service__list-row--nutritionist {
+  background-image: url("../img/apple.jpg");
+}
+.service__list-row--yoga {
+  background-image: url("../img/yoga.jpg");
+}
+.service__list-row--loops {
+  background-image: url("../img/loops.jpg");
+  margin-left: 0;
+}
+.service__list-row--crossfit {
+  background-image: url("../img/women.jpg");
+}
+.service__list-row--pool {
+  background-image: url("../img/swimming.jpg");
+}
+.service__list-row--allotted {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.service__list-row--text {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.partners {
+  width: 100%;
+  padding-bottom: 70px;
+}
+.partners__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 70px;
+  list-style: none;
+}
+.partners__list--row {
+  width: 26%;
+  margin-bottom: 40px;
+}
+.partners__list--img {
+  filter: grayscale(100%) opacity(50%);
+}
+.partners__list--img:hover {
+  filter: none;
 }
