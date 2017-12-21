@@ -12,29 +12,26 @@
 <body>
   <div class="wrapper">
     <header class="main-header">
-    <div class="container">
+      <div class="container">
         <nav class="navigation">
           <a class="navigation__logo" href="#">
           <img src="img/afrodita.png" width="160" height="18" alt="логотип афродиты">
        </a>
           <ul class="site-navigation">
-            <li><a class="site-navigation__link active" href="#">
-              <img class="site-navigation__link--icon" src="img/main_icon.png" alt="зигзаг">
+            <li><a class="site-navigation__link active-home" href="#">
               главная
             </a></li>
-            <li><a class="site-navigation__link" href="comments.html">
-              <img class="site-navigation__link--icon" src="img/whete-feed_icon.png" alt="звезда">
+            <li><a class="site-navigation__link site-navigation__link--star" href="comments.html">
               отзывы
             </a></li>
-            <li><a class="site-navigation__link" href="services.html">
-              <img class="site-navigation__link--icon" src="img/whete-service_icon.png" alt="гантеля">
+            <li><a class="site-navigation__link site-navigation__link--dumbbell" href="services.html">
               услуги
             </a></li>
           </ul>
-          <div class="contact__Information">
-            <div><a class="contact__Information--phone" href="tel:88000039210">8(800)00-392-10</a></div>
-            <div class="contact__Information--sked"><a class="contact__Information--link" href="#">График работы</a>
-              <div class="contact__Information--sub-menu">
+          <div class="contact__information">
+            <div><a class="contact__information--phone" href="tel:88000039210">8(800)00-392-10</a></div>
+            <div class="contact__information--sked"><a class="contact__information--link" href="#">График работы</a>
+              <div class="sub-menu">
                 <div class="sub-menu__sked">пн-вс: 09:00-20:00</div>
                 <div>обед: 14:00-14:30</div>
               </div>
@@ -48,8 +45,8 @@
     <main class="main-content">
       <section class="banner">
         <div class="container">
-           <div class="banner__img">
-            <img  src="img/Banner.jpg"  alt="баннер">
+          <div class="banner__img">
+            <img src="img/Banner.jpg" alt="баннер">
           </div>
         </div>
       </section>
@@ -100,7 +97,7 @@
               </ul>
             </li>
           </ul>
-        <!--  </div>-->
+          <!--  </div>-->
         </div>
       </section>
 
@@ -110,61 +107,65 @@
           <h2 class="news__title">последние новости</h2>
           <div class="news-page">
             <div class="news-page__parh">
-            <ul class="reviews">
-              <li>
-                <div class="reviews-border">
-                  <div class="reviews-avatar">
-                    <img src="img/Layer 6.jpg" alt="хаос">
-                  </div>
-                  <div class="reviews-page">
-                    <div class="reviews-date">12.10.2016</div>
-                    <div class="reviews-title">Похудение с помощью бодибилдинга</div>
-                    <div class="reviews-text reviews-text_item">Вдыхание одного литра кислорода эквивалентно "сжиганию" 5 калорий, однако в минуту при самом высоком темпе движений атлет способен вдохнуть не более 3-4 литров кислорода. Это крайне важно для каждого начинающего атлета.
+              <ul class="reviews">
+                <li class="reviews__element">
+                  <div class="reviews-border">
+                    <div class="reviews-avatar">
+                      <img src="img/Layer 6.jpg" alt="хаос">
+                    </div>
+                    <div class="reviews-page">
+                      <div class="reviews-date">12.10.2016</div>
+                      <div class="reviews-title">Похудение с помощью бодибилдинга</div>
+                      <div class="reviews-text reviews-text_item">Вдыхание одного литра кислорода эквивалентно "сжиганию" 5 калорий, однако в минуту при самом высоком темпе движений атлет способен вдохнуть не более 3-4 литров кислорода. Это крайне важно для каждого начинающего атлета.
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div class="reviews-border">
-                  <div class="reviews-avatar">
-                    <img src="img/Layer 7.jpg" alt="файер">
-                  </div>
-                  <div class="reviews-page">
-                    <div class="reviews-date">01.02.2016</div>
-                    <div class="reviews-title">Заражай друзей, получай призы!</div>
-                    <div class="reviews-text">Дополнительно для Вас пользование сауной и предоставление средств личной гигиены, пользованик баром, таблица замеров, дружеская атмосфера и постоянная поддержка. Мы заботимся о вашем комфорте и предлогае испытать это уже сегодня!
+                </li>
+                <li class="reviews__element">
+                  <div class="reviews-border">
+                    <div class="reviews-avatar">
+                      <img src="img/Layer 7.jpg" alt="файер">
+                    </div>
+                    <div class="reviews-page">
+                      <div class="reviews-date">01.02.2016</div>
+                      <div class="reviews-title">Заражай друзей, получай призы!</div>
+                      <div class="reviews-text">Дополнительно для Вас пользование сауной и предоставление средств личной гигиены, пользованик баром, таблица замеров, дружеская атмосфера и постоянная поддержка. Мы заботимся о вашем комфорте и предлогае испытать это уже сегодня!
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div class="reviews-border reviews-border_last">
-                  <div class="reviews-avatar">
-                    <img class="range" src="img/Layer 9.jpg" alt="ноутбук">
-                  </div>
-                  <div class="reviews-page">
-                    <div class="reviews-date">22.12.2015</div>
-                    <div class="reviews-title">Фрилансер? Выпрями спину!</div>
-                    <div class="reviews-text">Создайте рабочее место под себя. Вот этот инструмент поможет определить, что подходит именно вам и вашему организму. Используйте специальную подставку для ноутбука, если вы проводите за ним больше 2 часов. Настройте высоту и яркость
-                      монитора!
+                </li>
+                <li class="reviews__element">
+                  <div class="reviews-border reviews-border_last">
+                    <div class="reviews-avatar">
+                      <img class="range" src="img/Layer 9.jpg" alt="ноутбук">
+                    </div>
+                    <div class="reviews-page">
+                      <div class="reviews-date">22.12.2015</div>
+                      <div class="reviews-title">Фрилансер? Выпрями спину!</div>
+                      <div class="reviews-text">Создайте рабочее место под себя. Вот этот инструмент поможет определить, что подходит именно вам и вашему организму. Используйте специальную подставку для ноутбука, если вы проводите за ним больше 2 часов. Настройте высоту и яркость
+                        монитора!
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-            </ul>
-            <div class="switch">
-              <p>Страница 1 из 7</p>
-              <ul class="page-switch">
-                <li><a class="page-switch__first" href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
+                </li>
               </ul>
+              <div class="switch">
+                <p>Страница 1 из 7</p>
+                <div class="switch-wrap">
+                  <a class="switch-wrap__link--front" href=""></a>
+                  <ul class="switch-list">
+                    <li><a class="switch-wrap__first" href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                  </ul>
+                  <a class="switch-wrap__link--back" href=""></a>
+                </div>
+              </div>
             </div>
-          </div>
             <aside class="top-news">
               <p>топ новостей <span class="hue">за сентябрь</span></p>
               <ul>

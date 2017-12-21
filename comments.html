@@ -18,23 +18,20 @@
         <img src="img/afrodita.png" width="160" height="18" alt="логотип афродиты">
      </a>
           <ul class="site-navigation">
-            <li><a class="site-navigation__link" href="index.html">
-         <img class="site-navigation__link--icon" src="img/whete-main_icon.png" alt="зигзаг">
-         главная
-       </a></li>
-            <li><a class="site-navigation__link active" href="#">
-         <img class="site-navigation__link--icon" src="img/feed_icon.png" alt="звезда">
-         отзывы
-       </a></li>
-            <li><a class="site-navigation__link" href="services.html">
-         <img class="site-navigation__link--icon" src="img/whete-service_icon.png" alt="гантеля">
-         услуги
-       </a></li>
+            <li><a class="site-navigation__link site-navigation__link--zigzag" href="index.html">
+              главная
+            </a></li>
+            <li><a class="site-navigation__link active-recall" href="#">
+              отзывы
+            </a></li>
+            <li><a class="site-navigation__link site-navigation__link--dumbbell" href="services.html">
+              услуги
+            </a></li>
           </ul>
-          <div class="contact__Information">
-            <div><a class="contact__Information--phone" href="tel:88000039210">8(800)00-392-10</a></div>
-            <div class="contact__Information--sked"><a class="contact__Information--link" href="#">График работы</a>
-              <div class="contact__Information--sub-menu">
+          <div class="contact__information">
+            <div><a class="contact__information--phone" href="tel:88000039210">8(800)00-392-10</a></div>
+            <div class="contact__information--sked"><a class="contact__information--link" href="#">График работы</a>
+              <div class="sub-menu">
                 <div class="sub-menu__sked">пн-вс: 09:00-20:00</div>
                 <div>обед: 14:00-14:30</div>
               </div>
@@ -44,14 +41,14 @@
       </div>
     </header>
     <main class="main-content">
-        <div class="container">
-          <ul class="main-content__navigation">
-            <li class="main-content__navigation--line"><a class="main-content__navigation--link main-content__navigation--link-home" href="">Главная</a></li>
-            <li class="main-content__navigation--line"><a class="main-content__navigation--link" href="">Отзывы</a></li>
-          </ul>
-          <section class="recall">
+      <div class="container">
+        <ul class="main-content__navigation">
+          <li class="main-content__navigation--line"><a class="main-content__navigation--link main-content__navigation--link-home" href="">Главная</a></li>
+          <li class="main-content__navigation--line"><a class="main-content__navigation--link" href="">Отзывы</a></li>
+        </ul>
+        <section class="recall">
           <h2 class="recall__title">отзывы</h2>
-          <div class="news-page__parh">
+          <div class="recall__parh">
             <ul class="reviews">
               <li>
                 <div class="reviews-border">
@@ -111,66 +108,77 @@
             </ul>
             <div class="switch recall__switch">
               <p>Страница 1 из 7</p>
-              <ul class="page-switch">
-                <li><a class="page-switch__first" href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-              </ul>
+              <div class="switch-wrap">
+                <a class="switch-wrap__link--front" href=""></a>
+                <ul class="switch-list">
+                  <li><a class="switch-wrap__first" href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                </ul>
+                <a class="switch-wrap__link--back" href=""></a>
+              </div>
             </div>
 
-      </section>
+        </section>
         </div>
-      <section class="service-more">
-        <div class="container">
+        <section class="service-more">
+          <div class="container">
 
-          <p class="service-more__text">
-            Помимо перечисленных услуг, мы предоставляем консультации профессиональных диетологов, тренеров, психологов. Также есть кабинет массажа, зал спа рядом с бассейном и возможность арендовать центр для проведения массовых мероприятий. <span class="service-more__tagline">Ждем ваших заявок!</span>
-          </p>
+            <p class="service-more__text">
+              Помимо перечисленных услуг, мы предоставляем консультации профессиональных диетологов, тренеров, психологов. Также есть кабинет массажа, зал спа рядом с бассейном и возможность арендовать центр для проведения массовых мероприятий.
+              <span class="service-more__tagline">Ждем ваших заявок!</span>
+            </p>
 
-          <div>
-      </section>
-
-      <section class="form">
-        <div class="container">
-          <div class="form__page">
-            <h3 class="form__page--title">Оставить отзыв</h3>
-            <form class="form__page--form" action="/echo" method="post">
-              <div class="form__page--equalizer">
-                <div class="form__page--half-width">
-                  <label class="form__page--signature" for="name">Ваше имя</label>
-                  <input class="form__page--field" type="text" name="name" id="name" placeholder="Андрей">
-                </div>
-                <div class="form__page--half-width">
-                  <label class="form__page--signature" for="email">Ссылка на профиль в VK</label>
-                  <input class="form__page--field" type="email" name="email" id="email" placeholder="vk.com/example">
-                </div>
-              </div>
-              <div class="form__page--review-text">
-                <label class="form__page--signature" for="letter">Текст отзыва</label>
-                <textarea class="form__page--multiline-field" name="review" id="letter" placeholder="Мне понравились" rows="5"></textarea>
-              </div>
-              <div class="form__page--radio">
-                <p>Отображать фото в отзыве?</p>
-                <div class="form__page--radio-sheath">
-                <label class="form__page--radio-on">
-                  <div class="form__page--icon-on"></div>
-                  <input type="radio" name="question-one" value="да" checked>да
-                  </label>
-                <label class="form__page--radio-off">
-                  <div class="form__page--icon-off"></div>
-                  <input type="radio" name="question-one" value="нет">нет
-                  </label>
-                  </div>
-              </div>
-              <button class="form__page--form-submit ">отправить</button>
-            </form>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <section class="form">
+          <div class="container">
+            <div class="form__page">
+              <h3 class="form__page--title">Оставить отзыв</h3>
+              <form class="form__page--form" action="/echo" method="post">
+                <div class="form__page--equalizer">
+                  <div class="form__page--half-width">
+                    <label class="form__page--signature" for="name">Ваше имя</label>
+                    <input class="form__page--field" type="text" name="name" id="name" placeholder="Андрей">
+                  </div>
+                  <div class="form__page--half-width">
+                    <label class="form__page--signature" for="email">Ссылка на профиль в VK</label>
+                    <input class="form__page--field" type="email" name="email" id="email" placeholder="vk.com/example">
+                  </div>
+                </div>
+                <div class="form__page--review-text">
+                  <label class="form__page--signature" for="letter">Текст отзыва</label>
+                  <textarea class="form__page--multiline-field" name="review" id="letter" placeholder="Мне понравились" rows="5"></textarea>
+                </div>
+                <div class="form__page--radio">
+                  <p>Отображать фото в отзыве?</p>
+                  <div class="form__page--radio-wrap">
+                    <div class="form__page--radio-sheath">
+                      <label class="form__page--radio-on">
+
+                      <input class="form__page--icon-on" type="radio" name="question" value="да">
+                      <span class="form__page--checked"></span>
+                      <span class="form__page--text">да</span>
+                      </label>
+                      <label class="form__page--radio-on">
+
+                       <input class="form__page--icon-on" type="radio" name="question" value="нет">
+                       <span class="form__page--checked"></span>
+                        <span class="form__page--text">нет</span>
+                       </label>
+                      </div>
+                    <button class="form__page--form-submit ">отправить</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
 
 
     </main>
@@ -179,7 +187,7 @@
     <footer class="footer-page ">
       <div class="container ">
         <section class="copyrighted ">
-          <div class="copyrighted-page ">Сделано с любовью и старанием на курсе "HTML &plus; CSS " в
+          <div class="copyrighted-page ">Сделано с любовью и старанием на курсе "HTML &plus; CSS" в
             <a class="copyrighted-page__link " href="https://loftschool.com/course/web-beginner ">Loftschool</a>. Автор работы:<span class="author ">Бутенко Сергей</span>
           </div>
           <div class="logo ">
@@ -208,8 +216,8 @@
             </ul>
           </div>
       </div>
-      </div>
-    </footer>
+  </div>
+  </footer>
 </body>
 
 </html>
