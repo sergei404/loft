@@ -38,6 +38,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .site-navigation {
@@ -664,48 +665,14 @@ ul {
   border: 2px solid #cecece;
   border-radius: 50%;
 }
-.form__page--radio-on:checked +.form__page--text  {
-  color: #f89513;
-}
 .form__page--text {
   font-size: 18px;
-  text-transform: capitalize; 
+  text-transform: capitalize;
 }
-/*.form__page--icon-on::before {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  background: #ffffff;
-  border: 2px solid #f89513;
-  border-radius: 50%;
-}
-/*.form__page--radio-off {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 50px;
-  padding-left: 25px;
-  font-size: 20px;
+.form__page--icon-on:checked ~.form__page--text {
+  color: #f89513;
 }
 
-
-.form__page--icon-off {
-  opacity: 0;
-  width: 20px;
-  height: 20px;
-  z-index: 99999;
-  position: relative;
-}
-.form__page--radio-off::before {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  left: 10px;
-  background: 2px solid #000000;
-}*/
 .form__page--form-submit {
   display: block;
   width: 130px;
