@@ -6,7 +6,11 @@
   <title>Афродита</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,9 +33,10 @@
             </a></li>
           </ul>
           <div class="contact__information">
-            <div><a class="contact__information--phone" href="tel:88000039210">8(800)00-392-10</a></div>
-            <div class="contact__information--sked"><a class="contact__information--link" href="#">График работы</a>
+            <div><a class="contact__information-phone" href="tel:88000039210">8(800)00-392-10</a></div>
+            <div class="contact__information-sked"><a class="contact__information-link" href="#">График работы</a>
               <div class="sub-menu">
+                <div class="sub-menu__triangle"></<div>
                 <div class="sub-menu__sked">пн-вс: 09:00-20:00</div>
                 <div>обед: 14:00-14:30</div>
               </div>
@@ -53,52 +58,56 @@
 
 
       <section class="features">
-        <!--<svg >
-          <polygon points="0,100  1313,0  1313,650  0,750" fill="#131415"/>
-        </svg>-->
+
         <div class="container">
-          <!--<div class="svg">-->
+          <svg class="one">
+            <polygon points="0,90 0,0 1313,0" fill="#ffffff"/>
+         </svg>
+         <svg class="two">
+           <polygon points="0,150 1313,60 1313,150" fill="#ffffff"/>
+        </svg>
           <h2 class="features__title">особенности</h2>
           <ul class="features__page">
             <li class="features__column">
-              <div class="features__column--icon">
+              <div class="features__column-icon">
                 <img src="img/flower.png" alt="цветок">
               </div>
-              <b class="features__column--title">уникальность</b>
-              <p class="features__column--text">Мы делаем все,<br> для вашего комфорта</p>
-              <ul class="features__column--list">
-                <li class="features__column--row-list">Питание включено</li>
-                <li class="features__column--row-list">Багаж(5кг)</li>
-                <li class="features__column--row-list">Душ/баня</li>
+              <b class="features__column-title">уникальность</b>
+              <p class="features__column-text">Мы делаем все,<br> для вашего комфорта</p>
+              <ul class="features__column-list">
+                <li>Питание включено</li>
+                <li>Багаж(5кг)</li>
+                <li>Душ/баня</li>
               </ul>
             </li>
-            <li class="features__column">
-              <div class="features__column--icon">
+            <li class="features__column features__column--two">
+              <div class="features__column-icon">
                 <img src="img/mark-as-favorite-star.png" alt="звезда">
               </div>
-              <b class="features__column--title">премиум-класс</b>
-              <p class="features__column--text">Наш зал оборудован тренажерами А-класса</p>
-              <ul class="features__column--list">
-                <li class="features__column--row-list">Качество</li>
-                <li class="features__column--row-list">Продуктивность</li>
-                <li class="features__column--row-list">Результат</li>
+              <b class="features__column-title">премиум-класс</b>
+              <p class="features__column-text">Наш зал оборудован тренажерами А-класса</p>
+              <ul class="features__column-list">
+                <li>Качество</li>
+                <li>Продуктивность</li>
+                <li>Результат</li>
               </ul>
             </li>
             <li class="features__column">
-              <div class="features__column--icon">
+              <div class="features__column-icon">
                 <img src="img/painter-palette.png" alt="палитра">
               </div>
-              <b class="features__column--title">личный тренер</b>
-              <p class="features__column--text">Тренер сделает все для вашего результата</p>
-              <ul class="features__column--list">
-                <li class="features__column--row-list">Программа</li>
-                <li class="features__column--row-list">Питание</li>
-                <li class="features__column--row-list">План тренеровок</li>
+              <b class="features__column-title">личный тренер</b>
+              <p class="features__column-text">Тренер сделает все для вашего результата</p>
+              <ul class="features__column-list">
+                <li>Программа</li>
+                <li>Питание</li>
+                <li>План тренеровок</li>
               </ul>
             </li>
           </ul>
-          <!--  </div>-->
+
         </div>
+
       </section>
 
 
@@ -152,7 +161,7 @@
               <div class="switch">
                 <p>Страница 1 из 7</p>
                 <div class="switch-wrap">
-                  <a class="switch-wrap__link--front" href=""></a>
+                  <a class="switch-wrap__link-front" href=""></a>
                   <ul class="switch-list">
                     <li><a class="switch-wrap__first" href="#">1</a></li>
                     <li><a href="#">2</a></li>
@@ -162,7 +171,7 @@
                     <li><a href="#">6</a></li>
                     <li><a href="#">7</a></li>
                   </ul>
-                  <a class="switch-wrap__link--back" href=""></a>
+                  <a class="switch-wrap__link-back" href=""></a>
                 </div>
               </div>
             </div>

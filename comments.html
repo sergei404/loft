@@ -6,7 +6,11 @@
   <title>Афродита</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,8 +33,8 @@
             </a></li>
           </ul>
           <div class="contact__information">
-            <div><a class="contact__information--phone" href="tel:88000039210">8(800)00-392-10</a></div>
-            <div class="contact__information--sked"><a class="contact__information--link" href="#">График работы</a>
+            <div><a class="contact__information-phone" href="tel:88000039210">8(800)00-392-10</a></div>
+            <div class="contact__information-sked"><a class="contact__information-link" href="#">График работы</a>
               <div class="sub-menu">
                 <div class="sub-menu__sked">пн-вс: 09:00-20:00</div>
                 <div>обед: 14:00-14:30</div>
@@ -43,9 +47,10 @@
     <main class="main-content">
       <div class="container">
         <ul class="main-content__navigation">
-          <li class="main-content__navigation--line"><a class="main-content__navigation--link main-content__navigation--link-home" href="">Главная</a></li>
-          <li class="main-content__navigation--line"><a class="main-content__navigation--link" href="">Отзывы</a></li>
+          <li class="main-content__navigation-line"><a class="main-content__navigation-link main-content__navigation-link--home" href="">Главная</a></li>
+          <li class="main-content__navigation-line"><a class="main-content__navigation-link" href="">Услуги</a></li>
         </ul>
+        
         <section class="recall">
           <h2 class="recall__title">отзывы</h2>
           <div class="recall__parh">
@@ -137,48 +142,46 @@
         </section>
 
         <section class="form">
-          <div class="container">
-            <div class="form__page">
-              <h3 class="form__page--title">Оставить отзыв</h3>
-              <form class="form__page--form" action="/echo" method="post">
-                <div class="form__page--equalizer">
-                  <div class="form__page--half-width">
-                    <label class="form__page--signature" for="name">Ваше имя</label>
-                    <input class="form__page--field" type="text" name="name" id="name" placeholder="Андрей">
-                  </div>
-                  <div class="form__page--half-width">
-                    <label class="form__page--signature" for="email">Ссылка на профиль в VK</label>
-                    <input class="form__page--field" type="email" name="email" id="email" placeholder="vk.com/example">
-                  </div>
-                </div>
-                <div class="form__page--review-text">
-                  <label class="form__page--signature" for="letter">Текст отзыва</label>
-                  <textarea class="form__page--multiline-field" name="review" id="letter" placeholder="Мне понравились" rows="5"></textarea>
-                </div>
-                <div class="form__page--radio">
-                  <p>Отображать фото в отзыве?</p>
-                  <div class="form__page--radio-wrap">
-                    <div class="form__page--radio-sheath">
-                      <label class="form__page--radio-on">
-
-                      <input class="form__page--icon-on" type="radio" name="question" value="да">
-                      <span class="form__page--checked"></span>
-                      <span class="form__page--text">да</span>
-                      </label>
-                      <label class="form__page--radio-on">
-
-                       <input class="form__page--icon-on" type="radio" name="question" value="нет">
-                       <span class="form__page--checked"></span>
-                        <span class="form__page--text">нет</span>
+           <div class="container">
+             <div class="form-page">
+               <h3 class="form-page__title">Оставить отзыв</h3>
+               <form class="form-page__form" action="/echo" method="post">
+                 <div class="form-page__equalizer">
+                   <div class="form-page__half-width">
+                     <label class="form-page__signature" for="name">Ваше имя</label>
+                     <input class="form-page__field" type="text" name="name" id="name" placeholder="Андрей">
+                   </div>
+                   <div class="form-page__half-width">
+                     <label class="form-page__signature" for="email">Ссылка на профиль в VK</label>
+                     <input class="form-page__field" type="email" name="email" id="email" placeholder="vk.com/example">
+                   </div>
+                 </div>
+                 <div class="form-page__review-text">
+                   <label class="form-page__signature" for="letter">Текст отзыва</label>
+                   <textarea class="form-page__multiline-field" name="review" id="letter" placeholder="Мне понравились" rows="5"></textarea>
+                 </div>
+                 <div class="form-page__radio">
+                   <p>Отображать фото в отзыве?</p>
+                   <div class="form-page__radio-wrap">
+                     <div class="form-page__radio-sheath">
+                       <label class="form-page__radio-on">
+                       <input class="form-page__icon-on" type="radio" name="question" value="да" checked>
+                       <span class="form-page__checked"></span>
+                       <span class="form-page__text">да</span>
                        </label>
-                      </div>
-                    <button class="form__page--form-submit ">отправить</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
+                       <label class="form-page__radio-on">
+                        <input class="form-page__icon-on" type="radio" name="question" value="нет">
+                        <span class="form-page__checked"></span>
+                         <span class="form-page__text">нет</span>
+                        </label>
+                       </div>
+                     <button class="form-page__submit">отправить</button>
+                   </div>
+                 </div>
+               </form>
+             </div>
+           </div>
+         </section>
 
 
     </main>
