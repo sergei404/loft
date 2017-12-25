@@ -58,7 +58,7 @@
   display: table;
   background-repeat: no-repeat;
   background-position: center center;
-  transition-duration: 1s;
+  transition-duration: 0.4s;
 }
 .site-navigation__link--zigzag::before {
   width: 19px;
