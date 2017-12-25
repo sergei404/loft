@@ -34,24 +34,23 @@
   margin-top: 10px;
 }
 .social {
-  margin-left: 5px;
+  margin-top: 5px;
+  margin-left: 15px;
 }
 .social__tagline {
   display: inline-block;
   font-size: 14px;
   color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .social-page {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   list-style: none;
+  width: 143px;
+  padding-left: 5px;
 }
-
-.social-page li {
-  margin-right: 10px
-}
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;

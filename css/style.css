@@ -26,7 +26,11 @@ ul {
   margin: 0 auto;
 }
 
-
+.main-content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 .banner {
   width: 100%;
   padding-top: 80px;
@@ -148,7 +152,7 @@ ul {
 
 .main-content__navigation {
   margin-left: 90px;
-  margin-top: 40px;
+  margin-top: 15px;
   list-style: none;
 }
 
@@ -401,12 +405,10 @@ ul {
 
 .service {
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 .service-title,
 .partners-title {
-  margin-left: 90px;
+  margin-left: 95px;
   font-size: 50px;
   text-transform: uppercase;
 }
@@ -417,36 +419,40 @@ ul {
   list-style: none;
 }
 .service-list__row {
-  width: 26%;
-  margin-bottom: 40px;
+  width: 24%;
+  margin-bottom: 45px;
 }
-.service-list__row-indent {}
+.service-list__row-indent {
+  margin-left: 65px;
+  margin-right: 65px;
+}
 
 .service-list__row-block {
   position: relative;
-  width: 260px;
+  width: 250px;
   min-height: 150px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   background-color: #48dd8f;
 }
 .service-list__row-title {
   position: absolute;
   top: 60px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 49%;
+  transform: translateX(-51%);
   font-size: 24px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   color: #ffffff;
+  letter-spacing: 1px;
   z-index: 1;
 }
 .service-list__row-title--wrap {
   box-sizing: border-box;
-  width: 140px;
+  width: 145px;
 }
 .service-list__row-img {
-  width: 260px;
+  width: 250px;
   min-height: 150px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -476,26 +482,37 @@ ul {
 .service-list__row-allotted {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .service-list__row-text {
-  font-size: 15px;
-  line-height: 1.5;
+  width: 255px;
+  font-size: 13px;
+  font-weight: light;
+  line-height: 1.65;
+}
+.service-list__row--bottom {
+  margin-bottom: 20px;
 }
 .partners {
   width: 100%;
-  padding-bottom: 70px;
+  margin-bottom: 25px;
 }
-.partners__list {
+.partners-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 70px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 75px;
+  margin-left: 100px;
   list-style: none;
 }
-.partners__list--row {
-  width: 26%;
-  margin-bottom: 40px;
+.partners-list__row {
+  width: 25%;
+  margin-left: 55px;
+  margin-bottom: 45px;
+}
+.partners-list__row--left {
+  padding-left: 70px;
 }
 .partners__list--img {
   filter: grayscale(100%) opacity(50%);
