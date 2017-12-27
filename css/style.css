@@ -377,35 +377,26 @@ ul {
   width: 100%;
   margin: 0;
   padding: 0;
-  /*background-image: url("../img/gym.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  filter: brightness(50%);*/
+  padding-top: 14%;
 }
 
 .intro-page {
-  position:fixed;
-  z-index: -1;
-  top:0;
-  left:0;
-  width: 100%;
-  min-height: 100%;
-  background-image: url("../img/gym.jpg");
-  background-size: cover;
-  filter: brightness(50%);
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.intro__page--logo {
-  left: 575px;
-  top: 190px;
+.intro-page__wrap {
+  animation-name: move-intro-page__wrap;
+    animation-duration: 20s;
+}
+.intro-page__logo {
+  margin-bottom: 40px;
 }
 
-.intro__page--link {
+.intro-page__link {
   display: block;
   width: 170px;
-  margin-left: 570px;
-  margin-top: 220px;
   padding: 15px 0;
   font-size: 14px;
   color: #ffffff;
@@ -415,12 +406,30 @@ ul {
   background: #f89513;
   border-radius: 3px;
   border: none;
+  transition-duration: .5s;
 }
 
-.intro__page--link:hover {
+.intro-page__link:hover {
   background: #131415;
 }
-
+.intro-page__img {
+  position:fixed;
+  z-index: -1;
+  top:0;
+  left:0;
+  min-width:100%;
+  min-height:100%;
+  background-image: url("../img/gym.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: brightness(50%);
+}
+@keyframes move-intro-page__wrap {
+    to {
+        transform: translate(1000px, -350px);
+    }
+}
 .service {
   width: 100%;
 }
