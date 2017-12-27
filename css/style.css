@@ -3,23 +3,29 @@ body {
   margin: 0;
   padding: 0;
 }
-
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
 ul {
   margin: 0;
   padding: 0;
 }
 .wrapper {
-  position: relative;
+  display: flex;
+	min-height: 100%;
+	flex-direction: column;
+  /*position: relative;
   min-height: 100%;
   height: auto!important;
-  overflow: hidden;
+  overflow: hidden;*/
 }
 
-.wrapper:after {
+/*.wrapper:after {
   content: "";
   height: 75px;
   display: block;
-}
+}*/
 
 .container {
   width: 1060px;
@@ -27,6 +33,7 @@ ul {
 }
 
 .main-content {
+  flex: 1;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -152,7 +159,7 @@ ul {
 
 .main-content__navigation {
   margin-left: 90px;
-  margin-top: 15px;
+  margin-top: 40px;
   list-style: none;
 }
 
@@ -358,6 +365,7 @@ ul {
   background: #1c1f1d;
   border-radius: 3px;
   border: none;
+  transition-duration: 1s;
 }
 
 .form-page__submit:hover {
@@ -367,18 +375,28 @@ ul {
 
 .intro {
   width: 100%;
-  min-height: 660px;
   margin: 0;
   padding: 0;
-  background-image: url("../img/gym.jpg");
+  /*background-image: url("../img/gym.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  filter: brightness(50%);
+  filter: brightness(50%);*/
 }
 
+.intro-page {
+  position:fixed;
+  z-index: -1;
+  top:0;
+  left:0;
+  width: 100%;
+  min-height: 100%;
+  background-image: url("../img/gym.jpg");
+  background-size: cover;
+  filter: brightness(50%);
+
+}
 .intro__page--logo {
-  position: relative;
   left: 575px;
   top: 190px;
 }
@@ -408,8 +426,10 @@ ul {
 }
 .service-title,
 .partners-title {
-  margin-left: 95px;
+  margin-left: 90px;
   font-size: 50px;
+  margin-top: 15px;
+  margin-bottom: 40px;
   text-transform: uppercase;
 }
 .service-list {
@@ -420,7 +440,7 @@ ul {
 }
 .service-list__row {
   width: 24%;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
 }
 .service-list__row-indent {
   margin-left: 65px;
@@ -431,7 +451,7 @@ ul {
   position: relative;
   width: 250px;
   min-height: 150px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   background-color: #48dd8f;
 }
 .service-list__row-title {

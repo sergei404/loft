@@ -1,8 +1,6 @@
 .footer-page {
   width: 100%;
   background: #131415;
-  min-height: 75px;
-  margin-top: -75px;
 }
 
 .copyrighted {
@@ -70,7 +68,7 @@
   height: 20px;
   background: #d0d0d0;
   border-radius: 50%;
-  transition-duration: 1s;
+  transition-duration: .5s;
 }
 
 .social__networks:hover {
