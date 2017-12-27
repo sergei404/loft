@@ -387,8 +387,7 @@ ul {
   flex-direction: column;
 }
 .intro-page__wrap {
-  animation-name: move-intro-page__wrap;
-    animation-duration: 20s;
+  animation: bounceOutLeft 4s;
 }
 .intro-page__logo {
   margin-bottom: 40px;
@@ -425,11 +424,18 @@ ul {
   background-size: cover;
   filter: brightness(50%);
 }
-@keyframes move-intro-page__wrap {
-    to {
-        transform: translate(1000px, -350px);
-    }
+@keyframes bounceOutLeft {
+  20% {
+    opacity: 1;
+    transform: translate3d(20px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+  }
 }
+
 .service {
   width: 100%;
 }
@@ -441,6 +447,7 @@ ul {
   margin-bottom: 40px;
   text-transform: uppercase;
 }
+
 .service-list {
   display: flex;
   flex-wrap: wrap;

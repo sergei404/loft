@@ -28,7 +28,6 @@
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  transition-duration: 0.2s;
 }
 
 .active {
@@ -38,8 +37,7 @@
   position: absolute;
   content: "";
   display: block;
-  left: 5px;
-  top: 3px;
+  left: 8px;
   transition-duration: 0.4s;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -68,14 +66,20 @@
 }
 .active-home::before,
 .site-navigation__link--zigzag:hover::before {
+  width: 19px;
+  height: 14px;
   background-position: 0 -76px;
 }
 .active-recall::before,
 .site-navigation__link--star:hover::before {
+  width: 20px;
+  height: 18px;
   background-position: 0 -100px;
 }
 .active-service::before,
 .site-navigation__link--dumbbell:hover::before {
+  width: 19px;
+  height: 14px;
   background-position: 0 -128px;
 }
 
