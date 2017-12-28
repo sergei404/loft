@@ -1,6 +1,7 @@
 .footer-page {
   width: 100%;
   background: #131415;
+  padding-top: 5px;
 }
 
 .copyrighted {
@@ -13,10 +14,10 @@
   width: 245px;
   font-size: 14px;
   text-align: left;
-  margin-top: 20px;
   margin-bottom: 15px;
+  margin-top: 5px;
   color: #ffffff;
-  line-height: 1.4em;
+  line-height: 1.4;
 }
 
 .copyrighted-page__link {
@@ -28,18 +29,16 @@
   font-weight: bold;
 }
 .logo {
-  margin-right: 55px;
-  margin-top: 10px;
+  margin-right: 50px;
 }
 .social {
-  margin-top: 5px;
   margin-left: 15px;
 }
 .social__tagline {
   display: inline-block;
   font-size: 14px;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .social-page {
@@ -47,7 +46,6 @@
   justify-content: space-between;
   list-style: none;
   width: 143px;
-  padding-left: 5px;
 }
 .visually-hidden {
   position: absolute;

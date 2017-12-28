@@ -48,14 +48,14 @@
       <div class="container">
         <ul class="main-content__navigation">
           <li class="main-content__navigation-line"><a class="main-content__navigation-link main-content__navigation-link--home" href="">Главная</a></li>
-          <li class="main-content__navigation-line"><a class="main-content__navigation-link" href="">Услуги</a></li>
+          <li class="main-content__navigation-line"><a class="main-content__navigation-link" href="">Отзывы</a></li>
         </ul>
 
         <section class="recall">
-          <h2 class="recall__title">отзывы</h2>
-          <div class="recall__parh">
+          <h2 class="recall-title">отзывы</h2>
+          <div class="recall-parh">
             <ul class="reviews">
-              <li>
+              <li class="reviews-element">
                 <div class="reviews-border">
                   <div class="reviews-avatar">
                     <img src="img/athlete.jpg" alt="атлет">
@@ -63,13 +63,13 @@
                   <div class="reviews-page">
                     <div class="reviews-date">12.10.2016</div>
                     <div class="reviews-author">Алексей Воронов</div>
-                    <div class="reviews-text reviews-text_item">Пришел, чтобы похудеть немного к лету, но благодаря тренеру Александру Ковалеву, получилось накачать нормальные банки. Втянулся, теперь занимаюсь регулярно, 2 раза в неделю, доволен и всем советую. Кстати, польза от тренировок намного
+                    <div class="reviews-text reviews-text__item">Пришел, чтобы похудеть немного к лету, но благодаря тренеру Александру Ковалеву, получилось накачать нормальные банки. Втянулся, теперь занимаюсь регулярно, 2 раза в неделю, доволен и всем советую. Кстати, польза от тренировок намного
                       заметнее, если придерживаться ПП. Рацион мне составили на неделю, но я его повторяю, не надоедает
                     </div>
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="reviews-element">
                 <div class="reviews-border">
                   <div class="reviews-avatar">
                     <img src="img/athlete2.jpg" alt="девушка-атлет">
@@ -77,13 +77,13 @@
                   <div class="reviews-page">
                     <div class="reviews-date">01.02.2016</div>
                     <div class="reviews-author">Инна Смольная</div>
-                    <div class="reviews-text reviews-text_item">Подарили на день рождения абонемент в бассейн, пришлось воспользоваться. Сама бы я сюда не пришла, не очень нравится плавать с мужиками, которые пялятся постоянно, администрации следует обратить внимание на этот вопрос! Еще бросилось
+                    <div class="reviews-text reviews-text__item">Подарили на день рождения абонемент в бассейн, пришлось воспользоваться. Сама бы я сюда не пришла, не очень нравится плавать с мужиками, которые пялятся постоянно, администрации следует обратить внимание на этот вопрос! Еще бросилось
                       в глаза хамство обслуживающего персонала. Уборщица в раздевалке вела себя, как будто это к ней в гости пришли.
                     </div>
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="reviews-element">
                 <div class="reviews-border ">
                   <div class="reviews-avatar">
                     <img src="img/smart-object.png" alt="афродита">
@@ -91,27 +91,27 @@
                   <div class="reviews-page">
                     <div class="reviews-date">22.12.2015</div>
                     <div class="reviews-author">Владимир Савельев</div>
-                    <div class="reviews-text reviews-text_item">Норм клуб, железа хватает, но техника устаревшая. За эту цену – прокатит. Если хотите большего, то обращайтесь в специализированные тренажерки с новым железом и европейской техникой.
+                    <div class="reviews-text reviews-text__item">Норм клуб, железа хватает, но техника устаревшая. За эту цену – прокатит. Если хотите большего, то обращайтесь в специализированные тренажерки с новым железом и европейской техникой.
                     </div>
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="reviews-border reviews-border_last">
+              <liclass="reviews-element">
+                <div class="reviews-border reviews-border--last">
                   <div class="reviews-avatar">
                     <img src="img/athlete3.jpg" alt="еще девушка атлет">
                   </div>
                   <div class="reviews-page">
                     <div class="reviews-date">22.12.2015</div>
                     <div class="reviews-author">Ирина Савина</div>
-                    <div class="reviews-text reviews-text_item">Занимаюсь 4й месяц на петлях ТРХ и очень нравится результат. Даже знакомые отметили, что я помолодела, появилась талия, ножки постройнели. Нагрузка сначала была непривычная, но втягиваешься быстро, тем более, что отражение в зеркале
+                    <div class="reviews-text reviews-text__item">Занимаюсь 4й месяц на петлях ТРХ и очень нравится результат. Даже знакомые отметили, что я помолодела, появилась талия, ножки постройнели. Нагрузка сначала была непривычная, но втягиваешься быстро, тем более, что отражение в зеркале
                       радует. Цены приятные, а если платить на полгода вперед, то вообще выгодно получается, скидка почти 30%.
                     </div>
                   </div>
                 </div>
               </li>
             </ul>
-            <div class="switch recall__switch">
+            <div class="recall-switch">
               <p>Страница 1 из 7</p>
               <div class="switch-wrap">
                 <a class="switch-wrap__link--front" href=""></a>
@@ -159,7 +159,7 @@
                  </div>
                  <div class="form-page__review-text">
                    <label class="form-page__signature" for="letter">Текст отзыва</label>
-                   <textarea class="form-page__multiline-field" name="review" id="letter" placeholder="Мне понравились" rows="5"></textarea>
+                   <textarea class="form-page__multiline-field" name="review" id="letter" placeholder="Мне понравились"></textarea>
                  </div>
                  <div class="form-page__radio">
                    <p>Отображать фото в отзыве?</p>
@@ -196,7 +196,7 @@
           </div>
           <div class="logo ">
             <a class="menu-logo " href="intro-index.html">
-          <img src="img/afrodita.png " width="160 " height="18 " alt="логотип афродиты ">
+          <img src="img/afrodita.png " alt="логотип афродиты ">
        </a>
           </div>
           <div class="social ">
@@ -219,7 +219,7 @@
           </a></li>
             </ul>
           </div>
-      </div>
+      </section>
   </div>
   </footer>
 </body>

@@ -13,19 +13,11 @@ ul {
 }
 .wrapper {
   display: flex;
-	min-height: 100%;
-	flex-direction: column;
-  /*position: relative;
-  min-height: 100%;
-  height: auto!important;
-  overflow: hidden;*/
+  flex-direction: column;
+  width: 100%;
 }
 
-/*.wrapper:after {
-  content: "";
-  height: 75px;
-  display: block;
-}*/
+
 
 .container {
   width: 1060px;
@@ -193,40 +185,21 @@ ul {
 .main-content__navigation-link--home::before {
   display: none;
 }
-.recall {
-  width: 100%;
-  margin: 0;
-  padding-left: 120px;
-  padding-top: 45px;
-  padding-bottom: 55px;
-}
-.recall__title {
-  display: block;
-  text-align: start;
-  margin-top: 30px;
-  margin-bottom: 45px;
-  text-transform: uppercase;
-  font-size: 55px;
-}
-
-.recall__switch {
-  margin-left: 270px;
-}
-
 .service-more {
   width: 100%;
   background: #131415;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 7px;
+  padding-bottom: 5px;
   text-align: center;
 }
-
 .service-more__text {
   display: inline-block;
   width: 665px;
   text-align: left;
   font-size: 18px;
   color: #818282;
+  line-height: 1.65;
+  letter-spacing: -.3px;
 }
 
 .service-more__tagline {
@@ -237,24 +210,25 @@ ul {
 .form {
   width: 100%;
   padding-top: 65px;
-  padding-bottom: 65px;
+  padding-bottom: 60px;
   background: #ffffff;
 }
 
 .form-page {
-  margin-left: 200px;
-  margin-right: 200px;
-  padding-top: 35px;
+  margin-left: 180px;
+  margin-right: 180px;
+  padding-top: 40px;
   padding-bottom: 45px;
   background-color: #f5f5f5;
 }
 
 .form-page__title {
   display: inline-block;
-  margin-left: 50px;
-  margin-bottom: 35px;
+  margin-left: 70px;
+  margin-bottom: 22px;
   font-size: 45px;
   font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .form-page__form {
@@ -266,7 +240,7 @@ ul {
   display: flex;
   justify-content: space-between;
   width: 560px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .form-page__half-width {
@@ -275,7 +249,7 @@ ul {
 }
 
 .form-page__field {
-  width: 230px;
+  width: 235px;
   padding: 10px 15px;
   font-size: 16px;
   outline: 0;
@@ -294,7 +268,8 @@ ul {
 
 .form-page__multiline-field {
   width: 96%;
-  padding: 10px 15px;
+  height: 65px;
+  padding: 10px;
   font-size: 17px;
   border: 0;
   outline: 0;
@@ -306,15 +281,16 @@ ul {
 .form-page__radio-wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .form-page__radio-sheath {
   display: flex;
   justify-content: space-between;
-  width: 140px;
+  width: 120px;
 }
 .form-page__radio-on {
   display: flex;
+  justify-content: flex-start;
 }
 
 .form-page__icon-on {
@@ -328,24 +304,24 @@ ul {
   content: "";
   display: table;
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 10px;
-  height: 10px;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
   background: #f89513;
   border-radius: 50%;
 }
 .form-page__checked {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   margin-right: 10px;
   background: #ffffff;
   border: 2px solid #cecece;
   border-radius: 50%;
 }
 .form-page__text {
-  font-size: 18px;
+  font-size: 14px;
   text-transform: capitalize;
 }
 .form-page__icon-on:checked ~.form-page__text {
@@ -354,7 +330,7 @@ ul {
 
 .form-page__submit {
   display: block;
-  width: 130px;
+  width: 125px;
   padding: 15px;
   font-size: 14px;
   font-weight: bold;
@@ -366,6 +342,7 @@ ul {
   border-radius: 3px;
   border: none;
   transition-duration: 1s;
+  margin-top: -30px;
 }
 
 .form-page__submit:hover {
@@ -416,8 +393,8 @@ ul {
   z-index: -1;
   top:0;
   left:0;
-  min-width:100%;
-  min-height:100%;
+  min-width: 100%;
+  min-height: 100%;
   background-image: url("../img/gym.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -439,11 +416,10 @@ ul {
 .service {
   width: 100%;
 }
-.service-title,
-.partners-title {
-  margin-left: 90px;
+.service-title {
+  margin-left: 92px;
   font-size: 50px;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 40px;
   text-transform: uppercase;
 }
@@ -456,7 +432,7 @@ ul {
 }
 .service-list__row {
   width: 24%;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
 }
 .service-list__row-indent {
   margin-left: 65px;
@@ -467,14 +443,14 @@ ul {
   position: relative;
   width: 250px;
   min-height: 150px;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   background-color: #48dd8f;
 }
 .service-list__row-title {
   position: absolute;
-  top: 60px;
-  left: 49%;
-  transform: translateX(-51%);
+  top: 61px;
+  left: 48%;
+  transform: translateX(-52%);
   font-size: 24px;
   margin: 0;
   padding: 0;
@@ -531,7 +507,13 @@ ul {
 }
 .partners {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+}
+.partners-title {
+  margin-left: 92px;
+  font-size: 50px;
+  margin-top: 40px;
+  text-transform: uppercase;
 }
 .partners-list {
   display: flex;
