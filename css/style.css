@@ -368,8 +368,8 @@ ul {
   flex-direction: column;
 }
 .intro-page__wrap {
-  animation: turn 2s;
-  animation-iteration-count: 3;
+  animation: turn 3s;
+  animation-iteration-count: 2;
 }
 /*.intro-page__wrap {
   animation: bounceOutLeft 4s;
