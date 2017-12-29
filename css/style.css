@@ -295,6 +295,7 @@ ul {
 .form-page__radio-on {
   display: flex;
   justify-content: flex-start;
+  cursor: pointer;
 }
 
 .form-page__icon-on {
@@ -346,6 +347,7 @@ ul {
   border-radius: 3px;
   border: none;
   margin-top: -23px;
+  cursor: pointer;
   transition-duration: .5s;
 }
 
@@ -355,17 +357,33 @@ ul {
 
 
 .intro {
+  position: relative;
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-top: 14%;
 }
-
+.intro::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top:0;
+  left:0;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url("../img/gym.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: brightness(50%);
+}
 .intro-page {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  margin-top: 14%;
+  animation: turn 3s;
+  animation-iteration-count: 2;
+
 }
 .intro-page__wrap {
   animation: turn 3s;
@@ -396,19 +414,7 @@ ul {
 .intro-page__link:hover {
   background: #131415;
 }
-.intro-page__img {
-  position:fixed;
-  z-index: -1;
-  top:0;
-  left:0;
-  min-width: 100%;
-  min-height: 100%;
-  background-image: url("../img/gym.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  filter: brightness(50%);
-}
+
 @keyframes turn {
   to {
     transform: rotateY(360deg);

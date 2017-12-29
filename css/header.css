@@ -118,7 +118,8 @@
 
 .sub-menu {
   position: absolute;
-  left: -9999px;
+  max-width: 130px;
+  right: -450px;
   padding: 14px;
   background-color: #fff;
   box-shadow: 3px 3px 5px 2px #e9e9e9;
