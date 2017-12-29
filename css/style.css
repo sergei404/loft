@@ -7,6 +7,7 @@ h1, h2, h3 {
   margin: 0;
   padding: 0;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -58,7 +59,7 @@ ul {
   width: 100%;
   bottom: 0;
   right: 0;
-  
+
 }
 .features__title {
   display: block;
@@ -119,14 +120,11 @@ ul {
   font-size: 18px;
   margin-bottom: 10px;
 }
-
-
 .top-news {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-left: 10px;
-
 }
 
 .top-news p {
@@ -146,12 +144,12 @@ ul {
 }
 
 .top-news li {
-  margin-bottom: 25px;
+  margin-top: 15px;
 }
 
 .main-content__navigation {
   margin-left: 90px;
-  margin-top: 40px;
+  margin-top: 38px;
   list-style: none;
 }
 
@@ -188,8 +186,9 @@ ul {
 .service-more {
   width: 100%;
   background: #131415;
-  padding-top: 7px;
-  padding-bottom: 5px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .service-more__text {
@@ -199,7 +198,7 @@ ul {
   font-size: 18px;
   color: #818282;
   line-height: 1.65;
-  letter-spacing: -.3px;
+  letter-spacing: -.4px;
 }
 
 .service-more__tagline {
@@ -209,8 +208,8 @@ ul {
 
 .form {
   width: 100%;
-  padding-top: 65px;
-  padding-bottom: 60px;
+  padding-top: 55px;
+  padding-bottom: 63px;
   background: #ffffff;
 }
 
@@ -225,10 +224,10 @@ ul {
 .form-page__title {
   display: inline-block;
   margin-left: 70px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   font-size: 45px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 2.2px;
 }
 
 .form-page__form {
@@ -249,13 +248,12 @@ ul {
 }
 
 .form-page__field {
-  width: 235px;
-  padding: 10px 15px;
-  font-size: 16px;
+  width: 248px;
+  padding: 12px 10px;
+  font-size: 15px;
   outline: 0;
   border: 0;
 }
-
 .form-page__signature {
   display: block;
   margin-bottom: 10px;
@@ -263,13 +261,13 @@ ul {
 }
 
 .form-page__review-text {
-  margin-bottom: 15px;
+  margin-bottom: 22px;
 }
 
 .form-page__multiline-field {
   width: 96%;
   height: 65px;
-  padding: 10px;
+  padding: 5px 10px;
   font-size: 17px;
   border: 0;
   outline: 0;
@@ -277,6 +275,12 @@ ul {
 .form-page__field:focus,
 .form-page__multiline-field:focus {
   outline: 2px solid #f89513;
+}
+.form-page__radio p {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
 }
 .form-page__radio-wrap {
   display: flex;
@@ -341,8 +345,8 @@ ul {
   background: #1c1f1d;
   border-radius: 3px;
   border: none;
-  transition-duration: 1s;
-  margin-top: -30px;
+  margin-top: -23px;
+  transition-duration: .5s;
 }
 
 .form-page__submit:hover {
@@ -499,7 +503,6 @@ ul {
 .service-list__row-text {
   width: 255px;
   font-size: 13px;
-  font-weight: light;
   line-height: 1.65;
 }
 .service-list__row--bottom {
@@ -507,12 +510,12 @@ ul {
 }
 .partners {
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 .partners-title {
   margin-left: 92px;
   font-size: 50px;
-  margin-top: 40px;
+  margin-top: 38px;
   text-transform: uppercase;
 }
 .partners-list {
@@ -520,7 +523,7 @@ ul {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 75px;
+  margin-top: 80px;
   margin-left: 100px;
   list-style: none;
 }

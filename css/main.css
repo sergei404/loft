@@ -2,7 +2,7 @@
   width: 100%;
   margin: 0;
   padding-top: 50px;
-  padding-bottom: 55px;
+  padding-bottom: 60px;
 }
 
 .news-title {
@@ -19,9 +19,11 @@
   justify-content: space-around;
   margin-right: 20px;
 }
-
+.recall-parh {
+  margin-top: 25px;
+}
 .news-page__parh {
-  margin-top: 22px;
+  margin-top: 25px;
   margin-left: 25px;
 }
 
@@ -31,17 +33,25 @@
 
 }
 .reviews-unit {
-  margin-bottom: 28px;
-
+  margin-bottom: 25px;
+}
+.reviews-unit__frog {
+  padding-top: 8px;
+  margin-bottom: 30px;
+}
+.reviews-unit__indent {
+  margin-bottom: 35px;
+}
+.reviews-unit__indent .reviews-date {
+  margin-bottom: 5px;
 }
 .reviews-border {
   display: flex;
   justify-content: flex-start;
-  padding-bottom: 27px;
+  padding-bottom: 24px;
   border-bottom: 2px solid #f5f5f5;
 }
-
-.reviews-border_last {
+.reviews-border--last {
   border-bottom: none;
 }
 
@@ -64,17 +74,20 @@
 .reviews-date {
   font-size: 14px;
   color: #a3a2a2;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .reviews-title,
 .reviews-author {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 9px;
-  letter-spacing: 1px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  letter-spacing: .2px;
 }
-
+.reviews-title {
+  font-size: 18px;
+}
 .reviews-text {
   width: 625px;
   font-size: 18px;
@@ -87,14 +100,13 @@
 }
 .recall {
   width: 100%;
-  margin: 0;
   padding-left: 90px;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
 }
 .recall-title {
   display: block;
   text-align: start;
-  margin-top: 20px;
+  margin-top: 17px;
   margin-bottom: 37px;
   text-transform: uppercase;
   font-size: 50px;
@@ -106,23 +118,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 350px;
-  margin-left: 355px;
-  padding-top: 5px;
+  width: 360px;
+  margin-left: 360px;
 }
-.switch {
-  padding-top: 0;
-}
+
 .recall-switch {
-  margin-left: 265px;
+  margin-left: 260px;
+
 }
 .switch p {
   font-size: 14px;
 }
+
+.recall-switch p {
+  font-size: 14px;
+  letter-spacing: -.3px;
+  padding-left: 10px;
+}
 .switch-wrap {
   display: flex;
   position: relative;
-  width: 220px;
+  width: 215px;
 }
 .switch-list {
   display: flex;
@@ -130,10 +146,10 @@
   width: 180px;
   list-style: none;
   position: relative;
-  margin-left: 10px;
-  margin-right: 25px;
 }
-
+.switch li {
+  margin-right: 5px;
+}
 .switch-list a {
   text-decoration: none;
   color: #221f1f;
@@ -143,7 +159,7 @@
 }
 
 .switch-list .switch-wrap__first {
-  padding: 4px 8px;
+  padding: 4px 9px;
   color: #d4d4d8;
   background: #27273e;
   border-radius: 5px;
@@ -159,6 +175,7 @@
   display: table;
   width: 6px;
   height: 10px;
+  left: -10px;
   top: 5px;
   background-image: url("../img/vector.png");
 }
@@ -169,7 +186,7 @@
   display: table;
   width: 6px;
   height: 10px;
-  right: 10px;
+  right: 18px;
   top: 5px;
   background-image: url("../img/vector2.png");
 }

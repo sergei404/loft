@@ -1,7 +1,6 @@
 .footer-page {
   width: 100%;
   background: #131415;
-  padding-top: 5px;
 }
 
 .copyrighted {
@@ -15,7 +14,7 @@
   font-size: 14px;
   text-align: left;
   margin-bottom: 15px;
-  margin-top: 5px;
+  margin-top: 10px;
   color: #ffffff;
   line-height: 1.4;
 }
@@ -29,7 +28,7 @@
   font-weight: bold;
 }
 .logo {
-  margin-right: 50px;
+  margin-right: 55px;
 }
 .social {
   margin-left: 15px;
