@@ -368,8 +368,12 @@ ul {
   flex-direction: column;
 }
 .intro-page__wrap {
-  animation: bounceOutLeft 4s;
+  animation: turn 2s;
+  animation-iteration-count: 3;
 }
+/*.intro-page__wrap {
+  animation: bounceOutLeft 4s;
+}*/
 .intro-page__logo {
   margin-bottom: 40px;
 }
@@ -405,7 +409,12 @@ ul {
   background-size: cover;
   filter: brightness(50%);
 }
-@keyframes bounceOutLeft {
+@keyframes turn {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+/*@keyframes bounceOutLeft {
   20% {
     opacity: 1;
     transform: translate3d(20px, 0, 0);
@@ -415,7 +424,7 @@ ul {
     opacity: 0;
     transform: translate3d(-2000px, 0, 0);
   }
-}
+}*/
 
 .service {
   width: 100%;
